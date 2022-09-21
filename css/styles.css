@@ -1,0 +1,133 @@
+ul {
+	list-style: none;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}
+
+/* clock */
+#clock {
+	padding-top: 200px;
+	font-size: 120px;
+	margin-bottom: 0;
+}
+
+/* login-form */
+input {
+	text-align: center;
+	border: none;
+	border-bottom: 2px solid #fff;
+	width: 400px;
+	background-color: transparent;
+	margin-bottom: 30px;
+	color: #fff;
+	font-size: 40px;
+}
+
+input:focus {
+	outline: none;
+}
+
+input::placeholder {
+	color: #fff;
+}
+
+input[type='submit'] {
+	display: none;
+}
+
+#login-form input {
+	padding-top: 25px;
+}
+
+#login-form input::placeholder {
+	font-size: 25px;
+	opacity: 0.8;
+}
+
+/* greeting */
+#greeting {
+	padding: 0px;
+	font-size: 40px;
+}
+
+.hidden {
+	display: none;
+}
+
+/* tofo-form */
+#todo-form input {
+	padding-top: 15px;
+	width: 300px;
+	font-size: 30px;
+}
+
+#todo-form input::placeholder {
+	font-size: 16px;
+	filter: brightness(90%);
+}
+
+/* todo-list */
+#todo-list {
+	padding-left: 0;
+	z-index: 1;
+}
+
+#todo-list li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#todo-list li span {
+	font-size: 30px;
+}
+
+#todo-list button {
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	font-size: 20px;
+	margin-left: 25px;
+}
+
+/* quote */
+#quote {
+	position: fixed;
+	bottom: 15px;
+	text-align: center;
+	font-size: 20px;
+	z-index: 0;
+}
+
+#quote span {
+	margin-top: 10px;
+	display: block;
+}
+
+/* weather */
+#weather {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 20px;
+	font-size: 20px;
+}
+
+/* background */
+.background {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	filter: brightness(60%);
+}
